@@ -36,7 +36,7 @@ export function TourBtns({ changeIsStartAddElements }) {
   };
 
   return createPortal(
-    <div className={styles[`${side ? 'BlockBottom' : 'BlockTop'}`]}>
+    <div style={styles[`${side ? 'BlockBottom' : 'BlockTop'}`]}>
       <Button onClick={() => setStatus(s => !s)} id="switch-work-administrator">
         {status ? 'stop' : 'start'}
       </Button>

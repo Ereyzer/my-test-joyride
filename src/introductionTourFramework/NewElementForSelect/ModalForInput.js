@@ -40,12 +40,12 @@ export function ModalForInput({ addDescription, closeModal }) {
   };
 
   return createPortal(
-    <div className={styles.Backdrop} onClick={backdropClick}>
+    <div style={styles.Backdrop} onClick={backdropClick}>
       <form onSubmit={handleSubmit}>
         <textarea
           value={value}
           onChange={e => setValue(e.target.value)}
-          className={styles.Textarea}
+          style={styles.Textarea}
           cols="50"
           rows="10"
         />

@@ -32,7 +32,7 @@ const ModalMain = () => {
   };
 
   return createPortal(
-    <div className={styles.Modal}>
+    <div style={styles.Modal}>
       <Button onClick={onStartCLick}>Start</Button>
       <Button onClick={onFinishClick}>Finish</Button>
       {context?.elements?.length > 0 && <ListElement />}

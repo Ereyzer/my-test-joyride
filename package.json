@@ -1,6 +1,6 @@
 {
   "name": "my-test-joyride",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Create guided tours for your apps",
   "author": "Gil Barbara <gilbarbara@gmail.com>",
   "repository": {
@@ -131,11 +131,11 @@
   "size-limit": [
     {
       "path": "./es/index.js",
-      "limit": "32 kB"
+      "limit": "42 kB"
     },
     {
       "path": "./lib/index.js",
-      "limit": "32 kB"
+      "limit": "42 kB"
     }
   ],
   "husky": {

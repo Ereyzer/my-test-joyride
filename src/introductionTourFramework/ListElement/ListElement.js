@@ -78,10 +78,10 @@ const ListElement = () => {
   return (
     <ul>
       {context.elements.map(({ description, _id }) => (
-        <li className={styles.Item} key={_id || description}>
+        <li style={styles.Item} key={_id || description}>
           <p>{description}:</p>
           <button
-            className={styles.Button}
+            style={styles.Button}
             onClick={() => {
               context.apiService.delElement(_id);
               context.setElements(s => s.filter(e => e._id !== _id));

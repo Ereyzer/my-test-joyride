@@ -21,7 +21,7 @@ const styles = {
 };
 
 const Button = ({ children, onClick, id }) => (
-  <button id={id || ''} className={styles.Button} type="button" onClick={onClick}>
+  <button id={id || ''} style={styles.Button} type="button" onClick={onClick}>
     {children}
   </button>
 );

@@ -36,7 +36,7 @@ export function NewDom({ reference }) {
 
   return (
     <div
-      className={styles.NewDomBackdrop}
+      style={styles.NewDomBackdrop}
       onClick={selectElement}
       ref={newDomRef}
       newdom-attribute="new-dom"
