@@ -1,0 +1,16 @@
+.Button {
+  min-width: 200px;
+  padding: 8px 15px;
+  border: 2px solid #ccc;
+  background: #000;
+  color: #aaa;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 15px;
+  transition: all 400ms ease-out;
+}
+
+.Button:hover {
+  text-shadow: #fff -1px -1px 1px, #fff 1px 1px 1px;
+  letter-spacing: 2px;
+}

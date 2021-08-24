@@ -1,0 +1,70 @@
+.Text {
+  text-shadow: #fff -1px -1px 1px, #fff 1px 1px 1px;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 10px;
+}
+
+.List {
+  padding: 30px;
+  max-width: 600px;
+}
+
+.Item {
+  display: flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 15px 0;
+  max-width: 80%;
+  position: relative;
+  margin-bottom: 5px;
+  padding: 5px 150px 5px 25px;
+  background: #76c761;
+  color: #fff;
+  text-shadow: #fc0 1px 0 10px;
+  text-transform: capitalize;
+}
+
+.Item:before {
+  position: absolute;
+  padding: 10px 0;
+  top: 0;
+  bottom: 0;
+  left: -27px;
+  width: 30px;
+  background: #40852e;
+  border-bottom-left-radius: 70em;
+  border-top-left-radius: 70em;
+  counter-increment: li;
+  content: ' ';
+}
+
+.Description {
+  display: inline-block;
+  margin: 0;
+  font-size: 12px;
+}
+
+.Button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  padding: 5px 15px 5px 20px;
+  cursor: pointer;
+  border: 1px solid #40852e;
+  outline: none;
+  color: #40852e;
+  background: #d0e8c8;
+  border-radius: 35px 0 0 35px;
+  transition: all 400ms ease-out;
+}
+
+.Button:hover,
+.Button:focus {
+  border-color: #7d302a;
+  color: #7d302a;
+  background: #d9b8b4;
+  box-shadow: 0px 0px 8px 0px #990f0f;
+  text-shadow: #fff -1px -1px 1px, #fff 1px 1px 1px;
+}

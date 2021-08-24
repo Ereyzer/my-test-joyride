@@ -1,14 +1,14 @@
 {
-  "name": "react-joyride",
-  "version": "2.3.1",
+  "name": "my-test-joyride",
+  "version": "0.0.1",
   "description": "Create guided tours for your apps",
   "author": "Gil Barbara <gilbarbara@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gilbarbara/react-joyride.git"
+    "url": "git+https://github.com/Ereyzer/my-test-joyride.git"
   },
   "bugs": {
-    "url": "https://github.com/gilbarbara/react-joyride/issues"
+    "url": "https://github.com/Ereyzer/my-test-joyride/issues"
   },
   "homepage": "https://react-joyride.com/",
   "keywords": [
@@ -34,6 +34,7 @@
     "react-dom": "^15.0.0 || ^16.0.0 || ^17.0.0"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "deep-diff": "^1.0.2",
     "deepmerge": "^4.2.2",
     "exenv": "^1.2.2",
