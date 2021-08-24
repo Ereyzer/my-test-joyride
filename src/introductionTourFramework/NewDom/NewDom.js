@@ -1,7 +1,15 @@
 import React, { useRef, useContext } from 'react';
 import PropTypes from 'prop-types';
 import controlBtnsOnOfContext from '../helpers/context';
-import styles from './NewDom.module.css';
+
+const styles = {
+  NewDomBackdrop: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+  },
+};
 
 function createMarkup(text) {
   return { __html: text };
@@ -26,21 +34,6 @@ export function NewDom({ reference }) {
     ctx.setIsModalDescription(true);
   };
 
-  // useEffect(() => {
-  //   function noopElements(ref) {
-  //     let nodeArr = [];
-  //     if (ref.children) {
-  //       const elements = ref.children;
-  //       for (const element of elements) {
-  //         //   element.onclick = selectElement;
-  //         nodeArr.push(...[ReactDOM.findDOMNode(element), ...noopElements(element)]);
-  //       }
-  //       return nodeArr;
-  //     }
-  //   }
-
-  //   noopElements(newDomRef.current);
-  // }, [newDomRef]);
   return (
     <div
       className={styles.NewDomBackdrop}

@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect, useReducer } from 'react';
 import PropTypes from 'prop-types';
 import { TourBtns } from '../TourBtns/TourBtns';
 import controlBtnsOnOfContext from '../helpers/context';
-import ApiService from '../helpers/work-with-bakend';
+import ApiService from '../helpers/service/work-with-bakend';
 import ModalMain from '../ModalMain/ModalMain';
 import { NewDom } from '../NewDom/NewDom';
 import Tour from '../Tour/Tour';

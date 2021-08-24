@@ -5,7 +5,18 @@ import controlBtnsOnOfContext from '../helpers/context';
 import Button from '../Button/Button';
 import ListElement from '../ListElement/ListElement';
 
-import s from './ModalMain.module.css';
+const styles = {
+  Modal: {
+    position: 'fixed',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.68)',
+    padding: '15px',
+    overflow: 'auto',
+  },
+};
 
 const ModalMain = () => {
   const context = useContext(controlBtnsOnOfContext);
@@ -21,7 +32,7 @@ const ModalMain = () => {
   };
 
   return createPortal(
-    <div className={s.Modal}>
+    <div className={styles.Modal}>
       <Button onClick={onStartCLick}>Start</Button>
       <Button onClick={onFinishClick}>Finish</Button>
       {context?.elements?.length > 0 && <ListElement />}
