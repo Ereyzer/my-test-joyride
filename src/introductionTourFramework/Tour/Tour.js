@@ -21,9 +21,7 @@ const Tour = () => {
       status === STATUS.FINISHED
     ) {
       ctx.dispatchTourState({ type: 'STOP', steps: [] });
-      const oldLocaleStorage = JSON.parse(localStorage.getItem('shownElements'))
-        ? JSON.parse(localStorage.getItem('shownElements'))
-        : [];
+      const oldLocaleStorage = JSON.parse(localStorage.getItem('shownElements')) || [];
       localStorage.setItem(
         'shownElements',
         JSON.stringify([...oldLocaleStorage, ...ctx.tourState.steps.map(({ id }) => id)]),
